@@ -1,0 +1,171 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  	/* prevent selection of text inside keys */
+	user-select: none;
+	/* Smoothing out hover and active states using css3 transitions */
+	transition: all 0.2s ease;
+  outline: none;
+  border: none;
+}
+
+body,
+html {
+  font-family: "Dosis";
+  color: #ffffff;
+  padding-top: 2%;
+  height: 100%;
+	background: white;
+	background: radial-gradient(circle, #999 10%, #444);
+	background-size: cover;
+}
+
+#calculator {
+    background: #333;
+    width: 374px;
+    height: auto;
+    box-shadow: 2px 3px 6px #C2C2C2;
+    border-radius: 12px;
+  	margin: 100px auto;
+	  padding: 5px 5px 5px;
+    box-shadow:  0px 4px #999; 0px 10px 15px rgba(0,0,0,.5);
+    overflow: hidden;
+  	background: white;
+	background: radial-gradient(circle, #fff 10%, #ccc);
+	background-size: cover;
+}
+
+#screen {
+  color: black;
+  font-family: "Dosis";
+  font-size: 40px;
+  text-align: right;
+  padding: 20px 10px 0px 0px;
+  background: #B0BEC5;
+  width: auto;
+  height: 80px;
+  overflow: hidden;
+  margin: 10px 10px 10px 10px;
+	border-radius: 3px;
+	box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+  user-select: none;
+  overflow: visible;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.leftPad {
+  /*background: rgba(250, 34, 89, .5);*/
+  height: auto;
+  width: 264px;
+  float: left;
+  margin: 0px 0px 0px 7px;
+}
+
+.rightPad {
+  /*background: rgba(250, 89, 250, .9);*/
+  height: 460px;
+  width: auto;
+  margin: 0 0 0 0;
+  overflow: auto;
+}
+
+#display {
+  float:right;
+  padding: 0 0 0 10px;
+  overflow:visible;
+}
+
+#displayLeft {
+  float:left;
+  padding: 0 0 0 10px;
+  overflow:visible;
+}
+
+
+
+/*BUTTONS*/
+
+.btn {
+    outline: none;
+    position: relative;
+    background-color: #607D8B;
+    border-radius: 5px;
+    font-size: 40px;
+    font-family: "Dosis";
+    color: #fff;
+    padding: 0px;
+    margin: 5px 2px 5px 3px;
+    width: 80px;
+    height: 80px;
+    -webkit-transition: 0.05s;
+	  -moz-transition: 0.05s;
+	  transition: 0.05s;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px #455A64;
+  
+}
+
+.btn:hover {
+  background-color: #47A;
+  color: #fff;
+  box-shadow: 0 4px #455A64;
+	top: 2px;
+}
+
+.btn:active {
+  box-shadow: 0 0 #455A64;
+	top: 6px;
+}
+
+.btn-3 {
+  border-radius: 100px;
+  box-shadow: 0 4px #ab3c3c;
+	background: #cb4e4e;
+	color: #fff;
+}
+
+.btn-3:hover {
+  background-color: #F57F17;
+	box-shadow: 0 4px #ab3c3c;
+	top: 2px;
+}
+
+.btn-3:active {
+	box-shadow: 0 0 #ab3c3c;
+	top: 6px;
+}
+
+.btn-2 {
+  box-shadow: 0 4px #A1887F;
+  background-color: #FFA726;
+}
+
+.btn-2:hover {
+  background-color: #F57F17;
+	box-shadow: 0 4px #ab3c3c;
+	top: 2px;
+}
+
+.btn-2:active {
+	box-shadow: 0 0 #ab3c3c;
+	top: 6px;
+}
+
+.btn-4 {
+  box-shadow: 0 4px #455A64;
+  background-color: #369;
+}
+
+.btn-4:hover {
+  background-color: #47A;
+	box-shadow: 0 4px #455A64;
+	top: 2px;
+}
+
+.btn-4:active {
+	box-shadow: 0 0 #455A64;
+	top: 6px;
+}
